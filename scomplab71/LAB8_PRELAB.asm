@@ -1,0 +1,20 @@
+		ORG 0
+Start: CALL CALC
+		JUMP Start		
+		ORG &H010
+CALC: 	LOAD A
+		AND B
+		XOR C
+		STORE D
+		RETURN
+		
+ORG &H030
+A: DW &H00FF
+ORG &H031
+B: 	DW &HA5A5
+ORG &H032
+C: 	DW &H3300
+ORG &H033
+D: 	DW &H1234
+
+

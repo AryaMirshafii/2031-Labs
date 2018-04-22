@@ -1,0 +1,343 @@
+$comment
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+$end
+
+$date 
+  03/04/2018 13:42:54 
+$end
+$version 
+ QUARTUS_VCD_EXPORT 1.0 
+$end
+$timescale
+  1 ps
+$end
+$scope module SCOMP $end
+$var reg 1 ! RESETN $end
+$var reg 1 " CLOCK $end
+$var reg 10 # PC[9:0] $end
+$var reg 16 $ MDR_OUT[15:0] $end
+$var reg 16 % IR[15:0] $end
+$var reg 16 & AC[15:0] $end
+$var real 1 ' STATE $end
+$var reg 10 ( MAR_OUT[9:0] $end
+$var reg 1 ) MW $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+b0 #
+b10000010000 $
+b0 %
+b0 &
+rSTATE.RESET_PC '
+b0 (
+0)
+$end
+#500000
+1"
+#518565
+1!
+#1000000
+0"
+#1500000
+1"
+#1502931
+rUndefined '
+#1502933
+rSTATE.FETCH '
+#2000000
+0"
+#2500000
+1"
+#2502920
+rUndefined '
+#2502923
+b1 #
+#2502924
+b10000 %
+#2502931
+rSTATE.DECODE '
+#2502932
+b10000010000 %
+#2508024
+b1 (
+#2508575
+b0 (
+#2508587
+b10000 (
+#3000000
+0"
+#3010045
+b10000010001 $
+#3010185
+b10000000001 $
+#3010508
+b1 $
+#3500000
+1"
+#3502920
+rUndefined '
+#3502931
+rSTATE.EX_LOAD '
+#4000000
+0"
+#4500000
+1"
+#4502922
+b1 &
+#4502931
+rSTATE.FETCH '
+#4508575
+b10001 (
+#4508587
+b1 (
+#5000000
+0"
+#5010045
+b0 $
+#5010165
+b1000000000000 $
+#5010507
+b1000000000100 $
+#5010840
+b1100000000100 $
+#5500000
+1"
+#5502920
+rUndefined '
+#5502923
+b0 #
+#5502924
+b10 #
+b10000000100 %
+#5502931
+rSTATE.DECODE '
+#5502932
+b1100000000100 %
+#5507945
+b11 (
+#5508024
+b10 (
+#5508596
+b0 (
+#5509215
+b100 (
+#6000000
+0"
+#6010045
+b1100000000101 $
+#6010215
+b1100000000111 $
+#6010508
+b1110000000111 $
+#6500000
+1"
+#6502920
+rUndefined '
+#6502931
+rSTATE.FETCH '
+#6508596
+b110 (
+#6509215
+b10 (
+#7000000
+0"
+#7010045
+b1110000000110 $
+#7010185
+b1110000010110 $
+#7010215
+b1110000010100 $
+#7010507
+b1110000010000 $
+#7010508
+b1100000010000 $
+#7010840
+b1000000010000 $
+#7500000
+1"
+#7502920
+rUndefined '
+#7502923
+b11 #
+#7502924
+b1100000010000 %
+#7502931
+rSTATE.DECODE '
+#7502932
+b1000000010000 %
+#7508024
+b11 (
+#7508575
+b10 (
+#7508587
+b10010 (
+#7508596
+b10000 (
+#8000000
+0"
+#8010045
+b1000000010001 $
+#8010165
+b10001 $
+#8010185
+b1 $
+#8500000
+1"
+#8502920
+rUndefined '
+#8502931
+rSTATE.FETCH '
+#8508575
+b10001 (
+#8508587
+b1 (
+#8508596
+b11 (
+#9000000
+0"
+#9010165
+b1000000000001 $
+#9010508
+b1010000000001 $
+#9500000
+1"
+#9502920
+rUndefined '
+#9502923
+b10 #
+b1000000010001 %
+#9502924
+b100 #
+b1000000000001 %
+#9502931
+rSTATE.DECODE '
+#9502932
+b1010000000001 %
+#9507945
+b1 (
+#9508024
+b0 (
+#9508564
+b100 (
+#9508575
+b101 (
+#9509215
+b1 (
+#10000000
+0"
+#10010045
+b1010000000000 $
+#10010507
+b1010000000100 $
+#10010508
+b1000000000100 $
+#10010840
+b1100000000100 $
+#10500000
+1"
+#10502920
+rUndefined '
+#10502931
+rSTATE.EX_JUMP '
+#11000000
+0"
+#11500000
+1"
+#11502923
+b101 #
+#11502924
+b1 #
+#11502931
+rSTATE.FETCH '
+#12000000
+0"
+#12500000
+1"
+#12502920
+rUndefined '
+#12502923
+b0 #
+b1010000000000 %
+#12502924
+b10 #
+b1010000000100 %
+#12502931
+rSTATE.DECODE '
+#12502932
+b1100000000100 %
+#12507945
+b11 (
+#12508024
+b10 (
+#12508596
+b0 (
+#12509215
+b100 (
+#13000000
+0"
+#13010045
+b1100000000101 $
+#13010215
+b1100000000111 $
+#13010508
+b1110000000111 $
+#13500000
+1"
+#13502920
+rUndefined '
+#13502931
+rSTATE.FETCH '
+#13508596
+b110 (
+#13509215
+b10 (
+#14000000
+0"
+#14010045
+b1110000000110 $
+#14010185
+b1110000010110 $
+#14010215
+b1110000010100 $
+#14010507
+b1110000010000 $
+#14010508
+b1100000010000 $
+#14010840
+b1000000010000 $
+#14500000
+1"
+#14502920
+rUndefined '
+#14502923
+b11 #
+#14502924
+b1100000010000 %
+#14502931
+rSTATE.DECODE '
+#14502932
+b1000000010000 %
+#14508024
+b11 (
+#14508575
+b10 (
+#14508587
+b10010 (
+#14508596
+b10000 (
+#15000000

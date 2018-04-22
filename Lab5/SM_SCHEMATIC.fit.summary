@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sun Feb 11 15:03:40 2018
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : SM_SCHEMATIC
+Top-level Entity Name : SM_SCHEMATIC
+Family : Cyclone II
+Device : EP2C5T144C6
+Timing Models : Final
+Total logic elements : 2 / 4,608 ( < 1 % )
+    Total combinational functions : 2 / 4,608 ( < 1 % )
+    Dedicated logic registers : 2 / 4,608 ( < 1 % )
+Total registers : 2
+Total pins : 7 / 89 ( 8 % )
+Total virtual pins : 0
+Total memory bits : 0 / 119,808 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 26 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

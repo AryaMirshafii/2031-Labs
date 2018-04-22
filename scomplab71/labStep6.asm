@@ -1,0 +1,48 @@
+	ORG 0
+Start: LOAD Switches
+	STORE INDATA
+	
+	LOAD TWENTY
+	ADD 20
+	STORE TWENTY
+	ORG &H07
+Function: LOAD INDATA
+		STORE LEDS
+		
+		LOAD INDATA
+		STORE SEVENSEG
+		
+		LOAD INDATA
+		SHIFT INDATA
+		STORE INDATA
+		
+		
+		LOAD TIMER
+		SUB TIMER
+		STORE TIMER
+		
+		RETURN
+		
+	
+CheckTimer: LOAD TIMER
+			JZERO Function
+			
+			LOAD TWENTY
+			SUB TIMER
+			JUMP CheckTimer
+			
+			
+		
+		
+
+
+
+
+Switches: EQU &H00
+LEDS: EQU &H01
+TIMER: EQU &H02
+SEVENSEG: EQU &H04
+INDATA: EQU &H06
+
+TWENTY: EQU &H09 
+

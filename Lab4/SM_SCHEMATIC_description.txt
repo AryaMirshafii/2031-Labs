@@ -1,0 +1,3 @@
+Revision name:      SM_SCHEMATIC
+Created on:         Thursday, February 08, 2018
+Based on :          lab4

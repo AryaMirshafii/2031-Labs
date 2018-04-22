@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu Mar 08 13:02:10 2018
+Quartus II Version : 9.1 Build 222 10/21/2009 SJ Web Edition
+Revision Name : scomp
+Top-level Entity Name : SCOMP
+Family : Cyclone II
+Total logic elements : 268
+    Total combinational functions : 249
+    Dedicated logic registers : 52
+Total registers : 52
+Total pins : 106
+Total virtual pins : 0
+Total memory bits : 16,384
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

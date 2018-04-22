@@ -1,0 +1,81 @@
+MIF/HEX Update report for scomp
+Sat Mar 03 20:03:29 2018
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. MIF/HEX Update Summary
+  3. MIF/HEX Update Processed Files
+  4. MIF/HEX Update Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; MIF/HEX Update Summary                                        ;
++-----------------------+---------------------------------------+
+; MIF/HEX Update Status ; Successful - Sat Mar 03 20:03:29 2018 ;
+; Revision Name         ; scomp                                 ;
+; Top-level Entity Name ; SCOMP                                 ;
+; Family                ; Cyclone II                            ;
+; Device                ; EP2C35F672C6                          ;
++-----------------------+---------------------------------------+
+
+
++---------------------------------------------------+
+; MIF/HEX Update Processed Files                    ;
++---------------------------------------------------+
+; File Name                                         ;
++---------------------------------------------------+
+; //Mac/Home/Desktop/ECE2031/scomplab71/example.mif ;
++---------------------------------------------------+
+
+
++-------------------------+
+; MIF/HEX Update Messages ;
++-------------------------+
+Info: *******************************************************************
+Info: Running Quartus II MIF/HEX Update
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Sat Mar 03 20:03:29 2018
+Info: Command: quartus_cdb scomp -c scomp --update_mif
+Warning: 9 out of 1024 addresses are reinitialized. The latest initialized data will replace the existing data. There are 9 warnings found, and 9 warnings are reported.
+    Warning: Memory Initialization File address 0 is reinitialized
+    Warning: Memory Initialization File address 1 is reinitialized
+    Warning: Memory Initialization File address 2 is reinitialized
+    Warning: Memory Initialization File address 3 is reinitialized
+    Warning: Memory Initialization File address 4 is reinitialized
+    Warning: Memory Initialization File address 16 is reinitialized
+    Warning: Memory Initialization File address 17 is reinitialized
+    Warning: Memory Initialization File address 18 is reinitialized
+    Warning: Memory Initialization File address 19 is reinitialized
+Info: Processed the following Memory Initialization File(s)
+    Info: Processed Memory Initialization File //Mac/Home/Desktop/ECE2031/scomplab71/example.mif
+Info: Quartus II MIF/HEX Update was successful. 0 errors, 10 warnings
+    Info: Peak virtual memory: 294 megabytes
+    Info: Processing ended: Sat Mar 03 20:03:29 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

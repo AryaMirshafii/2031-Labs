@@ -1,0 +1,896 @@
+Simulator report for TOP_SCOMP
+Thu Mar 08 14:40:53 2018
+Quartus II Version 9.1 Build 222 10/21/2009 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 1.0 us       ;
+; Simulation Netlist Size     ; 423 nodes    ;
+; Simulation Coverage         ;      49.89 % ;
+; Total Number of Transitions ; 2626         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
+; Device                      ; EP2C35F672C6 ;
++-----------------------------+--------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                       ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Option                                                                                     ; Setting     ; Default Value ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+; Simulation mode                                                                            ; Timing      ; Timing        ;
+; Start time                                                                                 ; 0 ns        ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF        ;               ;
+; Vector input source                                                                        ; prelab6.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On          ; On            ;
+; Check outputs                                                                              ; Off         ; Off           ;
+; Report simulation coverage                                                                 ; On          ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On          ; On            ;
+; Display missing 1-value coverage report                                                    ; On          ; On            ;
+; Display missing 0-value coverage report                                                    ; On          ; On            ;
+; Detect setup and hold time violations                                                      ; Off         ; Off           ;
+; Detect glitches                                                                            ; Off         ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off         ; Off           ;
+; Generate Signal Activity File                                                              ; Off         ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off         ; Off           ;
+; Group bus channels in simulation results                                                   ; Off         ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On          ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE  ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off         ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto        ; Auto          ;
++--------------------------------------------------------------------------------------------+-------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-----------------------------------------------------------------------------------+
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ALTSYNCRAM ;
++-----------------------------------------------------------------------------------+
+Please refer to fitter text-based report (*.fit.rpt) to view logical memory report content in ASCII.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      49.89 % ;
+; Total nodes checked                                 ; 423          ;
+; Total output ports checked                          ; 459          ;
+; Total output ports with complete 1/0-value coverage ; 229          ;
+; Total output ports with no 1/0-value coverage       ; 221          ;
+; Total output ports with no 1-value coverage         ; 221          ;
+; Total output ports with no 0-value coverage         ; 230          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                        ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |TOP_SCOMP|altpll1:inst1|altpll:altpll_component|pll                                   ; |TOP_SCOMP|altpll1:inst1|altpll:altpll_component|_clk0                                 ; clk0             ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a12   ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[12]         ; portadataout0    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a12   ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[13]         ; portadataout1    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a12   ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[14]         ; portadataout2    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a12   ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[15]         ; portadataout3    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a8    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[8]          ; portadataout0    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a8    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[9]          ; portadataout1    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a8    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[10]         ; portadataout2    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a8    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[11]         ; portadataout3    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a4    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[4]          ; portadataout0    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a4    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[5]          ; portadataout1    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a4    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[6]          ; portadataout2    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a4    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[7]          ; portadataout3    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a0    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[0]          ; portadataout0    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a0    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[1]          ; portadataout1    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a0    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[2]          ; portadataout2    ;
+; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|ram_block1a0    ; |TOP_SCOMP|SCOMP:inst|altsyncram:MEMORY|altsyncram_8ht3:auto_generated|q_a[3]          ; portadataout3    ;
+; |TOP_SCOMP|SCOMP:inst|Add0~0                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~0                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~0                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~1                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~2                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~2                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~2                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~3                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~4                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~4                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~8                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~8                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|AC[13]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[13]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[12]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[12]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[9]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[9]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[8]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[8]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[6]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[6]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[4]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[4]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[3]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[3]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[1]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[1]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.FETCH                                                      ; |TOP_SCOMP|SCOMP:inst|STATE.FETCH                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[5]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[5]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[5]~4                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[5]~4                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[4]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[4]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[4]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[4]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[4]~5                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[4]~5                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[2]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[2]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[2]~7                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[2]~7                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[1]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[1]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[1]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[1]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[1]~8                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[1]~8                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[0]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[0]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[0]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[0]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[0]~9                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[0]~9                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[27]~2  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[27]~2  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~4  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~4  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~6  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~6  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[25]~7  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[25]~7  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[25]~8  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[25]~8  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~10 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~10 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[21]~11 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[21]~11 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~12 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~12 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[17]~13 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[17]~13 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[19]~15 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[19]~15 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[19]~16 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[19]~16 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~17 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~17 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[23]~19 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[23]~19 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~20 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~20 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~22 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~22 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_LOAD                                                    ; |TOP_SCOMP|SCOMP:inst|STATE.EX_LOAD                                                    ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_AND                                                     ; |TOP_SCOMP|SCOMP:inst|STATE.EX_AND                                                     ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_XOR                                                     ; |TOP_SCOMP|SCOMP:inst|STATE.EX_XOR                                                     ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC                                                   ; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC                                                   ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[15]~0                                                         ; |TOP_SCOMP|SCOMP:inst|AC[15]~0                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|AC[15]~1                                                         ; |TOP_SCOMP|SCOMP:inst|AC[15]~1                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[24]~30 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[24]~30 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[28]~32 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[28]~32 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[28]~33 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[28]~33 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~34 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~34 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[20]~35 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[20]~35 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~36 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~36 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[18]~38 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[18]~38 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[18]~39 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[18]~39 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~40 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~40 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~42 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~42 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[22]~44 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[22]~44 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[22]~45 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[22]~45 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~46 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~46 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~51 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~51 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~53 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~53 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~54 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~54 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~56 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~56 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~57 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~57 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~58 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[37]~58 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~60 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~60 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~61 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~61 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[61]~62 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[61]~62 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~63 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~63 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~65 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~65 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[32]~66 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[32]~66 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[32]~67 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[32]~67 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~69 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~69 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~70 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~70 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~71 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[36]~71 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~74 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~74 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[60]~75 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[60]~75 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[51]~77 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[51]~77 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[50]~79 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[50]~79 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[49]~81 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[49]~81 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[49]~82 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[49]~82 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[48]~84 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[48]~84 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[48]~85 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[48]~85 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~5                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~5                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_RETURN                                                  ; |TOP_SCOMP|SCOMP:inst|STATE.EX_RETURN                                                  ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_JUMP                                                    ; |TOP_SCOMP|SCOMP:inst|STATE.EX_JUMP                                                    ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_CALL                                                    ; |TOP_SCOMP|SCOMP:inst|STATE.EX_CALL                                                    ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Add0~20                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~20                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~21                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~21                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[9]~0                                                          ; |TOP_SCOMP|SCOMP:inst|PC[9]~0                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[9]~1                                                          ; |TOP_SCOMP|SCOMP:inst|PC[9]~1                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[6]~0                                                          ; |TOP_SCOMP|SCOMP:inst|IR[6]~0                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[14]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[14]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[12]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[12]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[13]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[13]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[11]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[11]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector27~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector27~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[10]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[10]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Mux0~0                                                           ; |TOP_SCOMP|SCOMP:inst|Mux0~0                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector27~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector27~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.DECODE                                                     ; |TOP_SCOMP|SCOMP:inst|STATE.DECODE                                                     ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_STORE                                                   ; |TOP_SCOMP|SCOMP:inst|STATE.EX_STORE                                                   ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector27~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector27~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector6~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector6~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector6~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector6~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector8~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector8~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector8~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector8~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector9~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector9~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector9~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector9~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector10~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector10~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector10~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector10~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|MW                                                               ; |TOP_SCOMP|SCOMP:inst|MW                                                               ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE~23                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~23                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~24                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~24                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~26                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~26                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~27                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~27                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~28                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~28                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~29                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~29                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~31                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~31                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~32                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~32                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~33                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~33                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~34                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~34                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]~0                                                    ; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]~0                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~35                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~35                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_STORE2                                                  ; |TOP_SCOMP|SCOMP:inst|STATE.EX_STORE2                                                  ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector0~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector0~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP_CLK                                                                   ; |TOP_SCOMP|SCOMP_CLK                                                                   ; padio            ;
+; |TOP_SCOMP|AC[13]                                                                      ; |TOP_SCOMP|AC[13]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[12]                                                                      ; |TOP_SCOMP|AC[12]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[9]                                                                       ; |TOP_SCOMP|AC[9]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[8]                                                                       ; |TOP_SCOMP|AC[8]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[6]                                                                       ; |TOP_SCOMP|AC[6]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[4]                                                                       ; |TOP_SCOMP|AC[4]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[3]                                                                       ; |TOP_SCOMP|AC[3]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[1]                                                                       ; |TOP_SCOMP|AC[1]                                                                       ; padio            ;
+; |TOP_SCOMP|MAR[5]                                                                      ; |TOP_SCOMP|MAR[5]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[4]                                                                      ; |TOP_SCOMP|MAR[4]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[2]                                                                      ; |TOP_SCOMP|MAR[2]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[1]                                                                      ; |TOP_SCOMP|MAR[1]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[0]                                                                      ; |TOP_SCOMP|MAR[0]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[15]                                                                     ; |TOP_SCOMP|MDR[15]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[14]                                                                     ; |TOP_SCOMP|MDR[14]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[13]                                                                     ; |TOP_SCOMP|MDR[13]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[12]                                                                     ; |TOP_SCOMP|MDR[12]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[11]                                                                     ; |TOP_SCOMP|MDR[11]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[10]                                                                     ; |TOP_SCOMP|MDR[10]                                                                     ; padio            ;
+; |TOP_SCOMP|MDR[9]                                                                      ; |TOP_SCOMP|MDR[9]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[8]                                                                      ; |TOP_SCOMP|MDR[8]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[7]                                                                      ; |TOP_SCOMP|MDR[7]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[6]                                                                      ; |TOP_SCOMP|MDR[6]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[5]                                                                      ; |TOP_SCOMP|MDR[5]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[4]                                                                      ; |TOP_SCOMP|MDR[4]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[3]                                                                      ; |TOP_SCOMP|MDR[3]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[2]                                                                      ; |TOP_SCOMP|MDR[2]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[1]                                                                      ; |TOP_SCOMP|MDR[1]                                                                      ; padio            ;
+; |TOP_SCOMP|MDR[0]                                                                      ; |TOP_SCOMP|MDR[0]                                                                      ; padio            ;
+; |TOP_SCOMP|PC[4]                                                                       ; |TOP_SCOMP|PC[4]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[2]                                                                       ; |TOP_SCOMP|PC[2]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[1]                                                                       ; |TOP_SCOMP|PC[1]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[0]                                                                       ; |TOP_SCOMP|PC[0]                                                                       ; padio            ;
+; |TOP_SCOMP|KEY[0]                                                                      ; |TOP_SCOMP|KEY[0]~corein                                                               ; combout          ;
+; |TOP_SCOMP|CLOCK_50                                                                    ; |TOP_SCOMP|CLOCK_50~corein                                                             ; combout          ;
+; |TOP_SCOMP|altpll1:inst1|altpll:altpll_component|_clk0~clkctrl                         ; |TOP_SCOMP|altpll1:inst1|altpll:altpll_component|_clk0~clkctrl                         ; outclk           ;
+; |TOP_SCOMP|SCOMP:inst|IR[14]~feeder                                                    ; |TOP_SCOMP|SCOMP:inst|IR[14]~feeder                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[8]~feeder                                                     ; |TOP_SCOMP|SCOMP:inst|IR[8]~feeder                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[6]~feeder                                                     ; |TOP_SCOMP|SCOMP:inst|IR[6]~feeder                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[5]~feeder                                                     ; |TOP_SCOMP|SCOMP:inst|IR[5]~feeder                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[1]~feeder                                                     ; |TOP_SCOMP|SCOMP:inst|IR[1]~feeder                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]~feeder                                               ; combout          ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~34                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~36                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~38                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~40                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~42                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~44                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~46                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~48                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~50                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~52                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~54                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~56                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~58                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~60                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~62                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~63                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~63                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~4                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~5                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~7                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~8                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~9                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~11                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~13                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~15                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~17                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~18                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~18                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|AC[15]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[15]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[14]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[14]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[11]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[11]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[10]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[10]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC[9]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[9]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[9]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[9]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[9]~0                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[9]~0                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[8]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[8]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[8]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[8]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[8]~1                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[8]~1                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[7]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[7]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[7]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[7]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[7]~2                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[7]~2                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[6]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[6]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[6]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[6]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[6]~3                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[6]~3                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[5]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[5]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC[3]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[3]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[3]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[3]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[3]~6                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[3]~6                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[2]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[2]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_SHIFT                                                   ; |TOP_SCOMP|SCOMP:inst|STATE.EX_SHIFT                                                   ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~3  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~3  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[29]~5  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[29]~5  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~9  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~9  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~14 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~14 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[55]~18 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[55]~18 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~21 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~21 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_ADD                                                     ; |TOP_SCOMP|SCOMP:inst|STATE.EX_ADD                                                     ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Add1~1                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~1                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~2                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~2                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~3                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~3                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~4                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~4                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~5                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~5                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~6                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~7                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~7                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~8                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~8                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~9                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~9                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~10                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~11                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~11                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~12                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~13                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~13                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~14                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~15                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~15                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~16                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~17                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~17                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~18                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~18                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~19                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~19                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~20                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~20                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~21                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~21                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~22                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~22                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~23                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~23                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~24                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~24                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~25                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~25                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~26                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~26                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~27                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~27                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~28                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~28                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~29                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~29                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~30                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~30                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~31                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~31                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~32                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~32                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~23 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~23 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~24 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~24 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~25 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~25 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~26 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~26 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~27 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~27 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~5                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~5                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~6                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~6                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[26]~28 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[26]~28 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~29 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~29 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~31 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~31 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~37 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~37 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[54]~41 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[54]~41 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~43 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~43 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[30]~47 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[30]~47 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~48 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~48 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~49 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~49 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~50 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~50 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~52 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~52 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~55 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~55 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~59 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~59 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~64 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~64 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[52]~68 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[52]~68 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~72 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~72 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~73 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~73 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[59]~76 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[59]~76 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~78 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~78 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[57]~80 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[57]~80 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[56]~83 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[56]~83 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector1~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector1~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector1~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector1~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[15]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[15]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector2~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector2~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector2~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector2~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector3~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector3~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector3~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector3~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector4~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector4~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector4~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector4~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector5~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector5~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector5~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector5~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector7~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector7~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector7~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector7~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[2]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[2]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE~25                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~25                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~30                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~30                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector0~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector0~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~86 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~86 ; combout          ;
+; |TOP_SCOMP|AC[15]                                                                      ; |TOP_SCOMP|AC[15]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[14]                                                                      ; |TOP_SCOMP|AC[14]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[11]                                                                      ; |TOP_SCOMP|AC[11]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[10]                                                                      ; |TOP_SCOMP|AC[10]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[9]                                                                      ; |TOP_SCOMP|MAR[9]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[8]                                                                      ; |TOP_SCOMP|MAR[8]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[7]                                                                      ; |TOP_SCOMP|MAR[7]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[6]                                                                      ; |TOP_SCOMP|MAR[6]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[3]                                                                      ; |TOP_SCOMP|MAR[3]                                                                      ; padio            ;
+; |TOP_SCOMP|PC[9]                                                                       ; |TOP_SCOMP|PC[9]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[8]                                                                       ; |TOP_SCOMP|PC[8]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[7]                                                                       ; |TOP_SCOMP|PC[7]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[6]                                                                       ; |TOP_SCOMP|PC[6]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[5]                                                                       ; |TOP_SCOMP|PC[5]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[3]                                                                       ; |TOP_SCOMP|PC[3]                                                                       ; padio            ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC~feeder                                            ; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC~feeder                                            ; combout          ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                           ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                              ; Output Port Name                                                                       ; Output Port Type ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~33                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~34                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~35                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~36                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~37                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~38                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~39                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~40                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~41                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~42                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~43                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~44                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~45                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~46                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~47                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~48                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~49                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~50                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~51                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~52                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~53                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~54                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~55                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~56                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~57                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~58                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~59                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~60                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~61                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~62                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add1~63                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~63                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~4                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~5                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~7                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~8                                                           ; |TOP_SCOMP|SCOMP:inst|Add0~9                                                           ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~11                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~13                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~15                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add0~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~17                                                          ; cout             ;
+; |TOP_SCOMP|SCOMP:inst|Add0~18                                                          ; |TOP_SCOMP|SCOMP:inst|Add0~18                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|AC[15]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[15]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[14]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[14]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[11]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[11]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[10]                                                           ; |TOP_SCOMP|SCOMP:inst|AC[10]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[7]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[7]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[5]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[5]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[2]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[2]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|AC[0]                                                            ; |TOP_SCOMP|SCOMP:inst|AC[0]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC[9]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[9]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[9]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[9]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[9]~0                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[9]~0                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[8]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[8]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[8]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[8]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[8]~1                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[8]~1                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[7]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[7]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[7]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[7]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[7]~2                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[7]~2                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[6]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[6]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[6]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[6]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[6]~3                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[6]~3                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC[5]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[5]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC[3]                                                            ; |TOP_SCOMP|SCOMP:inst|PC[3]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|IR[3]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[3]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[3]~6                                                    ; |TOP_SCOMP|SCOMP:inst|MEM_ADDR[3]~6                                                    ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[2]                                                            ; |TOP_SCOMP|SCOMP:inst|IR[2]                                                            ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_SHIFT                                                   ; |TOP_SCOMP|SCOMP:inst|STATE.EX_SHIFT                                                   ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~3  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[43]~3  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[29]~5  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[29]~5  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~9  ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~9  ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~14 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[35]~14 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[55]~18 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[55]~18 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~21 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[39]~21 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.EX_ADD                                                     ; |TOP_SCOMP|SCOMP:inst|STATE.EX_ADD                                                     ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Add1~1                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~1                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~2                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~2                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~3                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~3                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~4                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~4                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~5                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~5                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~6                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~6                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~7                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~7                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~8                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~8                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~9                                                           ; |TOP_SCOMP|SCOMP:inst|Add1~9                                                           ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~10                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~10                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~11                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~11                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~12                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~12                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~13                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~13                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~14                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~14                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~15                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~15                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~16                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~16                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~17                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~17                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~18                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~18                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~19                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~19                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~20                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~20                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~21                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~21                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~22                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~22                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~23                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~23                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~24                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~24                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~25                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~25                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~26                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~26                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~27                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~27                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~28                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~28                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~29                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~29                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~30                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~30                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~31                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~31                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Add1~32                                                          ; |TOP_SCOMP|SCOMP:inst|Add1~32                                                          ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~23 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~23 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~24 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~24 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~25 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~25 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~26 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~26 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~27 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[63]~27 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~5                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~5                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector11~6                                                     ; |TOP_SCOMP|SCOMP:inst|Selector11~6                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[26]~28 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[26]~28 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~29 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~29 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~31 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[42]~31 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~37 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[34]~37 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[54]~41 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[54]~41 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~43 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[38]~43 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[30]~47 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[30]~47 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~48 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~48 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~49 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~49 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~50 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[62]~50 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector12~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector12~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~52 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[41]~52 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~55 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[53]~55 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector13~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector13~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~59 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[45]~59 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~64 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[40]~64 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[52]~68 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[52]~68 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector14~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector14~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~72 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~72 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~73 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[44]~73 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[59]~76 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[59]~76 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector15~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector15~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~78 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[58]~78 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~3                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~3                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector16~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector16~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[57]~80 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[57]~80 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector17~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector17~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[56]~83 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[56]~83 ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector18~1                                                     ; |TOP_SCOMP|SCOMP:inst|Selector18~1                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector19~4                                                     ; |TOP_SCOMP|SCOMP:inst|Selector19~4                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector20~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector20~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector21~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector21~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector22~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector22~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector23~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector23~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector24~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector24~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector25~2                                                     ; |TOP_SCOMP|SCOMP:inst|Selector25~2                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector26~0                                                     ; |TOP_SCOMP|SCOMP:inst|Selector26~0                                                     ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector1~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector1~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[9]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector1~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector1~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|IR[15]                                                           ; |TOP_SCOMP|SCOMP:inst|IR[15]                                                           ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector2~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector2~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector2~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector2~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector3~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector3~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector3~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector3~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector4~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector4~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector4~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector4~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector5~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector5~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector5~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector5~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[4]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector7~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector7~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|Selector7~1                                                      ; |TOP_SCOMP|SCOMP:inst|Selector7~1                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[2]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[2]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[1]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[0]                                                      ; |TOP_SCOMP|SCOMP:inst|PC_STACK[0]                                                      ; regout           ;
+; |TOP_SCOMP|SCOMP:inst|STATE~25                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~25                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE~30                                                         ; |TOP_SCOMP|SCOMP:inst|STATE~30                                                         ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|Selector0~0                                                      ; |TOP_SCOMP|SCOMP:inst|Selector0~0                                                      ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~86 ; |TOP_SCOMP|SCOMP:inst|lpm_clshift:SHIFTER|lpm_clshift_0kc:auto_generated|sbit_w[47]~86 ; combout          ;
+; |TOP_SCOMP|AC[15]                                                                      ; |TOP_SCOMP|AC[15]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[14]                                                                      ; |TOP_SCOMP|AC[14]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[11]                                                                      ; |TOP_SCOMP|AC[11]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[10]                                                                      ; |TOP_SCOMP|AC[10]                                                                      ; padio            ;
+; |TOP_SCOMP|AC[7]                                                                       ; |TOP_SCOMP|AC[7]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[5]                                                                       ; |TOP_SCOMP|AC[5]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[2]                                                                       ; |TOP_SCOMP|AC[2]                                                                       ; padio            ;
+; |TOP_SCOMP|AC[0]                                                                       ; |TOP_SCOMP|AC[0]                                                                       ; padio            ;
+; |TOP_SCOMP|MAR[9]                                                                      ; |TOP_SCOMP|MAR[9]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[8]                                                                      ; |TOP_SCOMP|MAR[8]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[7]                                                                      ; |TOP_SCOMP|MAR[7]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[6]                                                                      ; |TOP_SCOMP|MAR[6]                                                                      ; padio            ;
+; |TOP_SCOMP|MAR[3]                                                                      ; |TOP_SCOMP|MAR[3]                                                                      ; padio            ;
+; |TOP_SCOMP|PC[9]                                                                       ; |TOP_SCOMP|PC[9]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[8]                                                                       ; |TOP_SCOMP|PC[8]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[7]                                                                       ; |TOP_SCOMP|PC[7]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[6]                                                                       ; |TOP_SCOMP|PC[6]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[5]                                                                       ; |TOP_SCOMP|PC[5]                                                                       ; padio            ;
+; |TOP_SCOMP|PC[3]                                                                       ; |TOP_SCOMP|PC[3]                                                                       ; padio            ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[8]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[7]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[6]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[5]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]~feeder                                               ; |TOP_SCOMP|SCOMP:inst|PC_STACK[3]~feeder                                               ; combout          ;
+; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC~feeder                                            ; |TOP_SCOMP|SCOMP:inst|STATE.RESET_PC~feeder                                            ; combout          ;
++----------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 222 10/21/2009 SJ Web Edition
+    Info: Processing started: Thu Mar 08 14:40:53 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off TOP_SCOMP -c TOP_SCOMP
+Info: Using vector source file "//Mac/Home/Desktop/ECE2031/scomplab71/prelab6.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of prelab6.vwf called TOP_SCOMP.sim_ori.vwf has been created in the db folder
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_ADDI" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_OR" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_JZERO" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_JPOS" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_JNEG" was synthesized away
+Warning: Can't display state machine states -- register holding state machine bit "|TOP_SCOMP|SCOMP:inst|STATE.EX_SUB" was synthesized away
+Info: System task:  Note : CycloneII PLL is enabled
+Info: System task: Time: 0  Instance: inst1|altpll_component|pll
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 7584  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL locked to incoming clock
+Info: System task: Time: 138012  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 732015  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 746446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 764446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 782446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 800446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 818446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 836446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 854446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 872446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 890446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 908446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 926446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 944446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 962446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 980446  Instance: inst1|altpll_component|pll
+Info: System task:  Note : CycloneII PLL was reset
+Info: System task: Time: 998446  Instance: inst1|altpll_component|pll
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      49.89 %
+Info: Number of transitions in simulation is 2626
+Info: Vector file prelab6.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 6 warnings
+    Info: Peak virtual memory: 219 megabytes
+    Info: Processing ended: Thu Mar 08 14:40:53 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:01
+
+
